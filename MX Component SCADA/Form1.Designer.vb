@@ -28,6 +28,10 @@ Partial Class Form1
         Me.cmdClose = New System.Windows.Forms.Button()
         Me.cmdOn = New System.Windows.Forms.Button()
         Me.cmdOff = New System.Windows.Forms.Button()
+        Me.lblOpen = New System.Windows.Forms.Label()
+        Me.lblClose = New System.Windows.Forms.Label()
+        Me.lblOn = New System.Windows.Forms.Label()
+        Me.lblOff = New System.Windows.Forms.Label()
         CType(Me.AxActUtlType1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -60,7 +64,7 @@ Partial Class Form1
         '
         'cmdOn
         '
-        Me.cmdOn.Location = New System.Drawing.Point(23, 126)
+        Me.cmdOn.Location = New System.Drawing.Point(23, 144)
         Me.cmdOn.Name = "cmdOn"
         Me.cmdOn.Size = New System.Drawing.Size(75, 23)
         Me.cmdOn.TabIndex = 3
@@ -69,18 +73,58 @@ Partial Class Form1
         '
         'cmdOff
         '
-        Me.cmdOff.Location = New System.Drawing.Point(128, 125)
+        Me.cmdOff.Location = New System.Drawing.Point(128, 144)
         Me.cmdOff.Name = "cmdOff"
         Me.cmdOff.Size = New System.Drawing.Size(75, 23)
         Me.cmdOff.TabIndex = 4
         Me.cmdOff.Text = "Y0 OFF"
         Me.cmdOff.UseVisualStyleBackColor = True
         '
+        'lblOpen
+        '
+        Me.lblOpen.AutoSize = True
+        Me.lblOpen.Location = New System.Drawing.Point(23, 38)
+        Me.lblOpen.Name = "lblOpen"
+        Me.lblOpen.Size = New System.Drawing.Size(43, 13)
+        Me.lblOpen.TabIndex = 5
+        Me.lblOpen.Text = "lblOpen"
+        '
+        'lblClose
+        '
+        Me.lblClose.AutoSize = True
+        Me.lblClose.Location = New System.Drawing.Point(128, 38)
+        Me.lblClose.Name = "lblClose"
+        Me.lblClose.Size = New System.Drawing.Size(43, 13)
+        Me.lblClose.TabIndex = 6
+        Me.lblClose.Text = "lblClose"
+        '
+        'lblOn
+        '
+        Me.lblOn.AutoSize = True
+        Me.lblOn.Location = New System.Drawing.Point(23, 117)
+        Me.lblOn.Name = "lblOn"
+        Me.lblOn.Size = New System.Drawing.Size(31, 13)
+        Me.lblOn.TabIndex = 7
+        Me.lblOn.Text = "lblOn"
+        '
+        'lblOff
+        '
+        Me.lblOff.AutoSize = True
+        Me.lblOff.Location = New System.Drawing.Point(131, 116)
+        Me.lblOff.Name = "lblOff"
+        Me.lblOff.Size = New System.Drawing.Size(31, 13)
+        Me.lblOff.TabIndex = 8
+        Me.lblOff.Text = "lblOff"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 261)
+        Me.Controls.Add(Me.lblOff)
+        Me.Controls.Add(Me.lblOn)
+        Me.Controls.Add(Me.lblClose)
+        Me.Controls.Add(Me.lblOpen)
         Me.Controls.Add(Me.cmdOff)
         Me.Controls.Add(Me.cmdOn)
         Me.Controls.Add(Me.cmdClose)
@@ -90,6 +134,7 @@ Partial Class Form1
         Me.Text = "Form1"
         CType(Me.AxActUtlType1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -98,4 +143,8 @@ Partial Class Form1
     Friend WithEvents cmdClose As Button
     Friend WithEvents cmdOn As Button
     Friend WithEvents cmdOff As Button
+    Friend WithEvents lblOpen As Label
+    Friend WithEvents lblClose As Label
+    Friend WithEvents lblOn As Label
+    Friend WithEvents lblOff As Label
 End Class
